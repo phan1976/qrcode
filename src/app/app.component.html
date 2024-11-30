@@ -1,6 +1,12 @@
 <h1>Hier is QrCode App</h1>
 <br>
-<input type="text" [(ngModel)]="qrInfo" />
+<input type="text" [(ngModel)]="qrBase" />
 <br>
+Name:<input type="text" [(ngModel)]="name" />
+<br>
+Age: <input type="text" [(ngModel)]="age" />
+<br>
+<p>{{qrInfo}}</p>
 <br>
 <qr-code [value]="qrInfo" [size]="width"></qr-code>
+<button (click)="qrupdate()">Update</button>
